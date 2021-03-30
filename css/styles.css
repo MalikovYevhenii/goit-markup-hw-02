@@ -15,7 +15,7 @@ body {
   font-family: 'Roboto', sans-serif;
 
 
-  background-color: var(--mainbackground-color);
+  background-color: var(--maincolor-color);
 }
 
 span {
@@ -65,6 +65,8 @@ ul, h1 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: var(--dark-main-color);
 }
 .header-link:hover,
 .header-link:focus {
@@ -106,8 +108,13 @@ ul, h1 {
   margin-left: auto;
   margin-right: 50px;
   padding: 32px 0;
-}
 
+  color: var(--dark-sec-color);
+}
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--sec-color);
+}
 
 /*Размеры и эффекты HEROO*/
 
@@ -136,6 +143,7 @@ ul, h1 {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   
   color: var(--main-color);
 }
@@ -149,6 +157,7 @@ ul, h1 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   
   color: var(--dark-main-color);
 }
@@ -172,9 +181,10 @@ ul, h1 {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     
-
   }
-
+.img-background {
+  border-radius: 0px;
+}
 
 .gallery {
   display: flex;
@@ -262,9 +272,12 @@ ul, h1 {
   letter-spacing: 0.03em;
  
   background-color:  var(--dark-background-color);
+  border-radius: 4px;
 }
 .big-button {
   padding-bottom: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .hero-button {
   display: block;
@@ -343,7 +356,7 @@ color: var(--dark-sec-color);
   
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
  
-  background: #F5F4FA;
+  background: var(--main-color)
 }
 
 /* footer */
@@ -377,15 +390,10 @@ background: var(--dark-background-color);
   margin-top: 20px;
 
 }
-
-.malito .tel {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-  
-  color: var(--dark-add-color);
+.footer-tel {
+ color: rgba(255, 255, 255, 0.6);;
 }
+
 
 .tel {
 color: var(--dark-add-color);
